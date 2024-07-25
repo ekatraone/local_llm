@@ -1,19 +1,45 @@
-# Local LLM UI with Authentication and Weekly Email Report
+# Local LLM Wrapper
 
-### Overview:
-Develop a secure local UI with authentication features and automated email reporting for enhanced user interaction and data management.
+## Description
+This project provides a web-based interface and API for interacting with a local Large Language Model (LLM). It allows users to send prompts to the LLM and receive generated responses, either through a user-friendly web interface or via API calls.
 
-### *Steps*:
-1. *UI Development*:
-   - Design and implement a user-friendly interface using Flask/Django, ensuring intuitive navigation and accessibility.
-2. *Authentication Feature*:
-   - Integrate OAuth or similar authentication mechanisms to secure user access and protect sensitive data.
-3. *Chat Log Feature*:
-   - Implement local storage for chat logs, ensuring data encryption and compliance with privacy regulations.
-4. *Weekly Email Report*:
-   - Develop a scheduled task to compile and send weekly chat logs to designated email addresses, enhancing user engagement and transparency.
+## Features
+- Web interface for easy interaction with the LLM
+- RESTful API for programmatic access
+- Support for various LLM backends (currently supports LLaMA)
+- Easy configuration using environment variables
+- Cross-platform compatibility (Windows, Mac, Linux)
+- Google Colab support for cloud-based execution
 
-### *Tips and Potential Improvements*:
-- *Security Enhancements*: Implement SSL/TLS encryption for secure data transmission and storage, safeguarding user information.
-- *User Feedback*: Incorporate feedback mechanisms to iterate UI/UX design based on user preferences and usability testing.
-- *Integration Capabilities*: Explore API integrations for seamless data exchange with external systems, enhancing functionality and scalability.
+## Project Structure
+llm_wrapper/
+│
+├── app/
+│   ├── init.py
+│   ├── routes.py
+│   ├── llm_handler.py
+│   └── config.py
+│
+├── static/
+│   └── style.css
+│
+├── templates/
+│   ├── index.html
+│   └── result.html
+│
+├── requirements.txt
+├── run.py
+├── .env.example
+├── README.md
+└── colab_runner.ipynb
+Copy
+## Setup and Running Instructions
+See the separate instruction files for Mac, Windows, and Google Colab setup guides.
+
+## API Documentation
+POST /api/generate
+Request body: JSON object with a "prompt" key
+Response: JSON object with a "response" key containing the LLM's generated text
+
+## License
+This project is licensed under the MIT License.

@@ -1,0 +1,57 @@
+Instructions for Mac (mac_instructions.md):
+
+markdownCopy# Mac Setup Instructions
+
+1. Install Python 3.7+ if not already installed:
+   - Download from https://www.python.org/downloads/mac-osx/
+   - Follow the installer instructions
+
+2. Open Terminal and navigate to the project directory:
+cd path/to/llm_wrapper
+Copy
+3. Create a virtual environment:
+python3 -m venv venv
+Copy
+4. Activate the virtual environment:
+source venv/bin/activate
+Copy
+5. Install required packages:
+pip install -r requirements.txt
+Copy
+6. Copy `.env.example` to `.env` and edit it with your settings:
+cp .env.example .env
+nano .env
+Copy
+7. Run the application:
+python run.py
+Copy
+8. Open a web browser and go to `http://localhost:5000` to access the application.
+
+Instructions for Windows (windows_instructions.md):
+
+markdownCopy# Windows Setup Instructions
+
+1. Install Python 3.7+ if not already installed:
+   - Download from https://www.python.org/downloads/windows/
+   - During installation, check "Add Python to PATH"
+
+2. Open Command Prompt and navigate to the project directory:
+cd path\to\llm_wrapper
+Copy
+3. Create a virtual environment:
+python -m venv venv
+Copy
+4. Activate the virtual environment:
+venv\Scripts\activate
+Copy
+5. Install required packages:
+pip install -r requirements.txt
+Copy
+6. Copy `.env.example` to `.env` and edit it with your settings:
+copy .env.example .env
+notepad .env
+Copy
+7. Run the application:
+python run.py
+Copy
+8. Open a web browser and go to `http://localhost:5000` to access the application.

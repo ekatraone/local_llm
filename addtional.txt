@@ -1,0 +1,23 @@
+Additional Essential Files:
+
+a. .env.example:
+CopySECRET_KEY=your-secret-key
+LLM_MODEL_PATH=/path/to/your/model.bin
+LLM_MODEL_TYPE=llama
+b. .gitignore:
+Copy# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

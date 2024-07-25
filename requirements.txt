@@ -1,0 +1,4 @@
+flask==2.1.0
+flask-wtf==1.0.0
+python-dotenv==0.19.2
+llama-cpp-python==0.1.0
